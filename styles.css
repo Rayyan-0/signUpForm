@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;  /* resets font to parent */
+  color: inherit;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  border: none;
+  outline: none; /* careful: removing focus indicator can hurt accessibility */
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+
+:root {
+  line-height: 1.5;
+  --modalUiBgColor: #271F46;
+  --modalTextColor: #eee;
+  --purpleText: #AF4DC6;
+  --modalBorderColor: #A6276A;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/home/rayyanalmalki/signUpForm/images/blob-scene-haikei.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--modalTextColor);
+}
+
+
+
+form {
+  font-size: 16px;
+  width: 300px;
+  height: 325px;
+  border-style: solid;
+  border-width: 6px;
+  border-radius: 12px;
+  border-color: #1a0831;
+  padding: 10px;
+  gap: 10px;
+  background-color: var(--modalUiBgColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+form h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-self: flex-start;
+  font-size: 16px;
+  align-self: center;
+}
+
+input {
+  width: 225px;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: var(--modalBorderColor);
+  border-width: 2px;
+  background-color: #210031;
+  padding: 3px;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+button:active {
+  box-shadow: 0px 0px 5px var(--modalBorderColor);
+}
+
+input:focus {
+  box-shadow: 0px 0px 5px var(--modalBorderColor);
+}
+
+button {
+  margin-top: 20px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #73003d;
+  border-radius: 8px;
+  box-shadow: #271F46;
+  color: wheat;
+  background-color:#A6276A;
+}
+.forgotPW {
+  color: var(--modalBorderColor);
+}

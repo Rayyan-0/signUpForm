@@ -1,1 +1,1 @@
-# signUpForm
+In this project I will be making a sign up form for an imaginary product. Starting from scratch.
